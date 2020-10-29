@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/lab_css.css"/>
+    <link rel="stylesheet" type="text/css" href="css/calendar.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Programming</title>
+    
+</head>
+<body>
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/lab_js.js"></script>
+  <script type="text/javascript" src="js/calendar.js"></script>
+  
+
+
+  <div class="header">
+    <img class="image1" src="img/python.png"  alt="logo">
+    <div class="titleBox">
+        <h1 class="title" >Welcome to the Python Programming course</h1>
+    </div>
+    <ul class="options">
+        <li><a id="home">Home</a></li>
+        <li><a id="topic1">Topic 1</a></li>
+        <li><a id="topic2">Topic 2</a></li>
+        <li><a id="topic3">Topic 3</a></li>
+    </ul>
+</div>
+
+
+<div class="row">
+  <div class="col-3 col-s-3 menu" >
+    <p id="CourseTitle">PYTHON PROGRAMMING</p>
+    <ul>
+      <li><a id=students>Students</a></li>
+      <li><a id="grades">Grades</a></li>
+      <li><a id="forum">Forum</a></li>
+      
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9" id="central">
+    <div class="registerBox">
+        <div class="registerForm">
+        <h3>Account Information</h3>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="usernamereg" name="uname" required>
+            <label for="NIAn"><b>NIA</b></label>
+            <input type="text" placeholder="Enter NIA" id="NIAREG" name="NIAn" required>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" maxlength="8" pattern="[a-z\d]*" placeholder="Enter Password" name="psw" required>
+        <h3>Personal Information</h3>
+            <label for="nameSur"><b>Name & Surname</b></label>
+            <input type="text" placeholder="Enter Name and Surname" id="nameReg" name="nameSur" required>
+            <label for="email"><b>Enter email</b></label>
+            <input type="email" placeholder="Enter Email email@example.com" id="emailReg" name="email" required>
+            <label for="Role"><b>Role</b></label>
+            <select class="List" name="Role">
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Admin</option> 
+            </select>
+            <label for="DateBirth">Date of Birth:</label>
+            <input type="date" id="BirthDate"  value="2018-07-22">
+            <label for="degree">Degree</label>
+            <select class="List" name="Degree">
+                <option>Computer Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option> 
+                <option>Industrial Engineering</option>
+            </select>
+            <label for="Role">Role</label>
+            <select class="List" name="Role">
+                <option>Student</option>
+                <option>Teacher</option>
+                <option>Admin</option> 
+            </select>
+            <label for="Language">Language</label>
+            <select class="List" name="Language">
+                <option>Spanish</option>
+                <option>English</option>
+                <option>Italian</option> 
+            </select>
+            <label for="University">Univeristy</label>
+            <select class="List" name="University">
+                <option >UC3M</option>
+            </select>
+            <input type="checkbox" name="TermsCond" id="TermsCondi" required>
+            <label for="read"> I have read and accept the Terms of Use</label><br>
+
+
+
+            
+        
+    </div>
+      
+    </div>
+  </div>
+
+  <div class="col-3 col-s-12" id="menu">
+    <div class="aside">
+      <div class="calendarBox" id="cal" data-date="2020-10-27"></div>
+      <h2 id="LastNews">Last News</h2>
+        <p>25/09/20 Topic3 Added</p>
+        <p>28/09/20 fixed error about Topic 2 video 2 Check it!</p>
+      <div class="calendarBox" id="cal" data-date="2020-10-27"></div>
+      <h2 id="NextEvents" >Next Events</h2>
+        <p>6/10/20 Exam about Topic 1 and Topic2</p>
+        <p>5/10/20 Due date for Topic 2 Exercises</p>
+        <p>10/10/20 Grades published about first Exam</p>
+    </div>
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer">
+  <div class="verticalLine">
+    <a href="https://www.python.org/doc/copyright/"> Copyright</a>
+  </div>
+  <div class="verticalLine1">
+    <a href="https://docs.python.org/3/license.html">History and license</a>
+  </div>
+  <div class=text>
+    <a href="https://www.jetbrains.com/legal/agreements/user.html"> Terms and conditions </a>
+  </div>
+</div>
+</footer>
+</body>
+
+</html>
+

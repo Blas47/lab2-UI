@@ -12,21 +12,22 @@
   html {
     font-family: "Lucida Sans", sans-serif;
   }
-  .logBox{
+  .logBox,.registerForm{
     background-color: #45B8F6;
     border-radius: 10px;
 
   }
-  .inputForm{
+  .inputForm,.registerForm{
     padding: 10%;
   }
-  input[type=text], input[type=password] {
+  input[type=text], input[type=password],input[type=email],.List, input[type=date]{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border: #000;
   }
   .button{
     background-color: #0099cc;

@@ -294,13 +294,16 @@ $(document).ready(function() {
       var d = new Date();
       d.setTime(d.getTime() + (exdays*24*60*60*1000));
       var expires = "expires="+ d.toUTCString();
+    
       document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      console.log(document.cookie);
       
     }
     
     function getCookie(cname) {
       var name = cname + "=";
       var decodedCookie = decodeURIComponent(document.cookie);
+      console.log(decodedCookie);
       var ca = decodedCookie.split(';');
       for(var i = 0; i < ca.length; i++) {
         var c = ca[i];
@@ -314,23 +317,46 @@ $(document).ready(function() {
       return "";
     }
     
-    function checkCookie(username) {
+    function checkCookie(username,action) {
       var user=getCookie(username);
-      if (user != "") {
-        alert("Welcome again " + user);
-        console.log("your cookie has been read perfectly");
-      } else {
-        setCookie("username", username,30);
-        console.log("new user added");
+      console.log(user);
+      if(action=="login"){
+        if (user != "") {
+          console.log("your cookie has been read perfectly");
+
+        } else{
+          alert("username not registered, please register");
+        }
+      } else{
+        if (user != "") {
+          console.log("creating new user");
+          setCookie("username",username,30);
+
+        } else{
+          console.log(user);
+          alert("username already used");
+        }
       }
+      
     }
     //function when clicked log in
     $("#Login").click(function(){
-      console.log("login clicked");
+      console.log("loging in a new user");
       //get the email entered as user name
-      var username = document.getElementById("Login").value;
-      checkCookie(username);
+      var username = document.getElementById("username").value;
+      console.log(username);
+      checkCookie(username,"login");
     })
+    $("#Register").click(function(){
+      console.log("registering user");
+      //get the username to create the profile
+      var username = document.getElementById("username").value;
+      //create the cookie associated to that user
+      //we have to check if that username is already used
+      checkCookie(username,"register");
+
+    })
+
 
     
 
