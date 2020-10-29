@@ -1,0 +1,10 @@
+ <div class="col-6 col-s-9" id="central">
+    <h1>Python Programming</h1>
+      <p>Welcome to the Python Programming course. In this course you will learn the first steps of Python</p>
+      <h2>Topic 1</h2>
+        <p>In the first topic you will learn a bit about the background of the langauge. Installation of the IDE, and some basic examples</p>
+      <h2>Topic2</h2>
+        <p>It will include a explanation about the different data types and data structures that you can finde in Python.</p>
+      <h2>Topic3</h2>
+        <p>Introduction to the flow control of a program. </p>
+  </div>
